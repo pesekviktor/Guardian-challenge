@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Guardian clientside challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Based on Guardian challenge https://github.com/guardian/clientside-tabs-challenge.
+With focus on Test Coverage and Reusability.
+
+In order to run ".env" containing Guardian api key needs to be created. You can see ".example.env" for example.
+
+Due to the task simplicity and the fact the simplicity I will use just react and store the
+values in state - rather than using a state container like redux. I have not used any api library such as axios or sagas.
+
+##Reusability
+There is a "useGuardianApiHook", it would make sense to have an "apiFetchHook", which could then be generally used when 
+fetching from api, though not necessary for this task.
+
+##Test Coverage
+There is a TabbedViewTest to show how I would approach testing. Due to limited time I have not done other tests. As the next test I 
+would have done the fetch hook test.
+
+Result UI:
+![img.png](img.png)
 
 ## Available Scripts
 
